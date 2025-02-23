@@ -37,7 +37,6 @@ function submitFormHandler(event) {
     });
     return;
   } else {
-    debugger;
     refs.loadingMessage.innerHTML = '<span class="loader"></span>';
     getImages(searchQuery)
       .then(images => {

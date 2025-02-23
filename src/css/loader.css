@@ -9,7 +9,7 @@
 
 .loader {
   display: block;
-  width: 30%;
+  width: 100%;
   position: relative;
   height: 12px;
   border: 1px solid #fff;
@@ -30,5 +30,18 @@
 @keyframes prog {
   to {
     width: 100%;
+  }
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .loader {
+    width: 50%;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .loader {
+    width: 30%;
   }
 }
