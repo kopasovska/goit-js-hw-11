@@ -9,7 +9,6 @@ const axiosInstance = axios.create({
     image_type: 'photo',
     orientation: 'horizontal',
     safeSearch: true,
-    timestamp: new Date().getTime(),
   },
 });
 
