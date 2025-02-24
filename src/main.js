@@ -41,6 +41,7 @@ function submitFormHandler(event) {
     getImages(searchQuery)
       .then(images => {
         if (images.length === 0) {
+          refs.loadingMessage.innerHTML = '';
           iziToast.info({
             title: 'Info',
             message:
